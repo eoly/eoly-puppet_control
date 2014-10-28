@@ -13,4 +13,5 @@ class { 'r10k':
   },
   purgedirs         => ["${::settings::confdir}/environments"],
   manage_modulepath => false,
+  install_options   => '--debug',
 }
