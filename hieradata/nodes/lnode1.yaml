@@ -1,7 +1,7 @@
 ---
 
 classes:
-  - roles
+  - roles::lnode_box
 
 ntp_servers:
   - 0.pool.ntp.org
