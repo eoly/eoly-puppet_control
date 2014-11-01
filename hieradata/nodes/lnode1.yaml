@@ -6,3 +6,16 @@ classes:
 ntp_servers:
   - 0.pool.ntp.org
   - 1.pool.ntp.org
+
+postfix_myhostname: 'mail.sourcecurrent.net'
+postfix_mydomain: 'sourcecurrent.net'
+postfix_mydestination: "\$myhostname, localhost.\$mydomain, localhost, %{::fqdn}, %{::hostname}"
+postfix_inet_interfaces: 'all'
+postfix_mail_name: 'sourcecurrent.net mail system'
+postfix_mynetworks: '127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128'
+postfix_virtual_alias_domains:
+  - 'sourcecurrent.com'
+  - 'sourcecurrent.net'
+  - 'ericolsen.net'
+postfix_virtual_alias_maps: 
+  - 'hash:/etc/postfix/virtual'
