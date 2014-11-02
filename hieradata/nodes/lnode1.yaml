@@ -19,3 +19,13 @@ postfix_virtual_alias_domains:
   - 'ericolsen.net'
 postfix_virtual_alias_maps: 
   - 'hash:/etc/postfix/virtual'
+postfix_virtual:
+  eolsen@ericolsen.net: 'ericjolsen@gmail.com'
+  eric@ericolsen.net: 'ericjolsen@gmail.com'
+  ericolsen@ericolsen.net: 'ericjolsen@gmail.com'
+  oly@ericolsen.net: 'ericjolsen@gmail.com'
+  webmaster@ericolsen.net: 'ericjolsen@gmail.com'
+  abuse@ericolsen.net: 'ericjolsen@gmail.com'
+  postmaster@ericolsen.net: 'ericjolsen@gmail.com'
+  info@ericolsen.net: 'ericjolsen@gmail.com'
+  noc@ericolsen.net: 'ericjolsen@gmail.com'
