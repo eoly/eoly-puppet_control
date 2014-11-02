@@ -6,7 +6,9 @@ mod "puppetlabs/java", "1.1.2"
 mod "puppetlabs/stdlib", "4.3.2"
 mod "puppetlabs/concat", "1.1.2"
 
-mod 'thias/postfix', '0.3.3'
+mod 'postfix', 
+    :git => 'https://github.com/thias/puppet-postfix',
+    :commit => 'e141e14b0dedcf65015c2df772171646f129009f'
 
 mod 'roles',
     :git => 'https://github.com/eoly/eoly-roles'
