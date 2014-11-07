@@ -4,4 +4,15 @@ local_users:
   eolsen:
     ensure: 'present'
     home: '/home/eolsen'
-    password: ENC[PKCS7,MIIBeQYJKoZIhvcNAQcDoIIBajCCAWYCAQAxggEhMIIBHQIBADAFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEAMQjpYawUU/IT5a2C/fsCffoTMUXFmkE60VTvvRbUn+jEJDVJlwbmVRxGqMWJDlcfgqPOcRuntDIROfQCyAoRajx+13jN90prMvqD95cI8mnvy+dBwzyZRk8Sw0sGXey8PMus20EGtuBUBoMQhp80w3AauGBy6sUCN3lUdHxeD+k5rlnAIZmrzS8ARw6i4C9rH+dEQXi598tgS8dcqpyUZZvlxtujIR6gbZyJe4MVJRWMQHPz7irgZIpgGjm2NxRWQImKygOoJd3WxSMc9DBGAYUMx0B1h4YZXldX/bBgOqQRtT+t0tWMnTfD6BjwHozFxjHp36g0vgzRkQYYQPJ26zA8BgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBCb2katrwZ/Y9jvJQOlETlugBCpXTlaLZtGUZZ2HXqqnNpk]
+    password: >
+        ENC[PKCS7,MIIB2gYJKoZIhvcNAQcDoIIByzCCAccCAQAxggEhMIIBHQIBADAFMAACAQEw
+        DQYJKoZIhvcNAQEBBQAEggEAlniU1+8SyJbHvnSF1KULWumUXQd8hwQG/waC
+        YeCONsWSt+mvkRgdunIUIQ3rakN3Io3quHrKLuko5TtLnLvRo8FZqh6pp8t7
+        WrudtJn6q6sqhXDyXz+bVgGAxWMf2dhPpX/b3KaldJVhRQgdnmhOCIPDoBiU
+        BvfwojS9lavDHG1igiX8+QMmMV+vIZcyWdf1SC5Bd3SoqR5XAgAWhcPk7L8/
+        soj83BsPlapenYQtrs7rx/2sM9/Japl9Px8aX+17gzDmpFYMw5JACN1jTBi7
+        ZbaBTHxFuumjgYTv6SV4fyD6E6XCop0UNU1SLBtxrU6b7fnczymQaU3epDK/
+        sErhBDCBnAYJKoZIhvcNAQcBMB0GCWCGSAFlAwQBKgQQocDymy0HgvMyA41R
+        PzxIiIBw5dhd3K+JOLvol36+3Lkg4itNzs4WSr1yVLVYvlvnNFjI5Wi1WTdV
+        fChhFE1dwOCpsi/o46il1Zrh6xw9QMl24pBUGjaQAvqXjn9sozagMGwpaEro
+        QJ1OyZczq6LQADB0hbyLLtOpkdz0/IxGDNs+mw==]
