@@ -1,1 +1,7 @@
 ---
+
+local_users:
+  eolsen:
+    ensure: 'present'
+    home: '/home/eolsen'
+    password: ENC[PKCS7,MIIBeQYJKoZIhvcNAQcDoIIBajCCAWYCAQAxggEhMIIBHQIBADAFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEAMQjpYawUU/IT5a2C/fsCffoTMUXFmkE60VTvvRbUn+jEJDVJlwbmVRxGqMWJDlcfgqPOcRuntDIROfQCyAoRajx+13jN90prMvqD95cI8mnvy+dBwzyZRk8Sw0sGXey8PMus20EGtuBUBoMQhp80w3AauGBy6sUCN3lUdHxeD+k5rlnAIZmrzS8ARw6i4C9rH+dEQXi598tgS8dcqpyUZZvlxtujIR6gbZyJe4MVJRWMQHPz7irgZIpgGjm2NxRWQImKygOoJd3WxSMc9DBGAYUMx0B1h4YZXldX/bBgOqQRtT+t0tWMnTfD6BjwHozFxjHp36g0vgzRkQYYQPJ26zA8BgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBCb2katrwZ/Y9jvJQOlETlugBCpXTlaLZtGUZZ2HXqqnNpk]
