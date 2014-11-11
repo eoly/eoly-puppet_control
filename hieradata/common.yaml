@@ -4,6 +4,7 @@ local_users:
   eolsen:
     ensure: 'present'
     home: '/home/eolsen'
+    managehome: 'yes'
     password: >
         ENC[PKCS7,MIIB2gYJKoZIhvcNAQcDoIIByzCCAccCAQAxggEhMIIBHQIBADAFMAACAQEw
         DQYJKoZIhvcNAQEBBQAEggEAlniU1+8SyJbHvnSF1KULWumUXQd8hwQG/waC
