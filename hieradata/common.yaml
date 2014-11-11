@@ -1,5 +1,11 @@
 ---
 
+vimrc_repo:
+  ensure: 'present'
+  provider: 'git'
+  source: 'https://github.com/eoly/eoly-vimrc.git'
+  revision: 'eb9c2ea5f03dd1b904abe41507433a911e8bb707'
+
 local_users:
   eolsen:
     ensure: 'present'

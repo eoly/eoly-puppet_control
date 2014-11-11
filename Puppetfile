@@ -5,6 +5,7 @@ mod "puppetlabs/ntp", "3.2.1"
 mod "puppetlabs/java", "1.1.2"
 mod "puppetlabs/stdlib", "4.3.2"
 mod "puppetlabs/concat", "1.1.2"
+mod "puppetlabs/vcsrepo", "1.2.0"
 
 mod 'postfix', 
     :git => 'https://github.com/thias/puppet-postfix',
