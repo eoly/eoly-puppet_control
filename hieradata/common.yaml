@@ -1,7 +1,7 @@
 ---
 
 vimrc_repo:
-  '/home/eolsen/.vimrc':
+  '/home/eolsen/.vim':
       ensure: 'present'
       provider: 'git'
       source: 'https://github.com/eoly/eoly-vimrc.git'
