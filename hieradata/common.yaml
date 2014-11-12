@@ -12,6 +12,8 @@ local_users:
     ensure: 'present'
     home: '/home/eolsen'
     managehome: 'yes'
+    groups:
+      - wheel
     password: >
         ENC[PKCS7,MIIB2gYJKoZIhvcNAQcDoIIByzCCAccCAQAxggEhMIIBHQIBADAFMAACAQEw
         DQYJKoZIhvcNAQEBBQAEggEAlniU1+8SyJbHvnSF1KULWumUXQd8hwQG/waC
