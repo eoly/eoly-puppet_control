@@ -8,6 +8,7 @@ mod "puppetlabs/concat", "1.1.2"
 mod "puppetlabs/vcsrepo", "1.2.0"
 
 mod "alup/rbenv", "1.2.0"
+mod "maestrodev/wget", "1.5.6"
 
 mod 'postfix', 
     :git => 'https://github.com/thias/puppet-postfix',
