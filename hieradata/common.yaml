@@ -1,28 +1,17 @@
 ---
 
-vimrc_repo:
-  '/home/eolsen/.vim':
-      ensure: 'present'
-      provider: 'git'
-      source: 'https://github.com/eoly/eoly-vimrc.git'
-      revision: 'eb9c2ea5f03dd1b904abe41507433a911e8bb707'
-
-local_users:
-  eolsen:
-    ensure: 'present'
-    home: '/home/eolsen'
-    managehome: 'yes'
-    groups:
-      - wheel
-    password: >
-        ENC[PKCS7,MIIB2gYJKoZIhvcNAQcDoIIByzCCAccCAQAxggEhMIIBHQIBADAFMAACAQEw
-        DQYJKoZIhvcNAQEBBQAEggEAlniU1+8SyJbHvnSF1KULWumUXQd8hwQG/waC
-        YeCONsWSt+mvkRgdunIUIQ3rakN3Io3quHrKLuko5TtLnLvRo8FZqh6pp8t7
-        WrudtJn6q6sqhXDyXz+bVgGAxWMf2dhPpX/b3KaldJVhRQgdnmhOCIPDoBiU
-        BvfwojS9lavDHG1igiX8+QMmMV+vIZcyWdf1SC5Bd3SoqR5XAgAWhcPk7L8/
-        soj83BsPlapenYQtrs7rx/2sM9/Japl9Px8aX+17gzDmpFYMw5JACN1jTBi7
-        ZbaBTHxFuumjgYTv6SV4fyD6E6XCop0UNU1SLBtxrU6b7fnczymQaU3epDK/
-        sErhBDCBnAYJKoZIhvcNAQcBMB0GCWCGSAFlAwQBKgQQocDymy0HgvMyA41R
-        PzxIiIBw5dhd3K+JOLvol36+3Lkg4itNzs4WSr1yVLVYvlvnNFjI5Wi1WTdV
-        fChhFE1dwOCpsi/o46il1Zrh6xw9QMl24pBUGjaQAvqXjn9sozagMGwpaEro
-        QJ1OyZczq6LQADB0hbyLLtOpkdz0/IxGDNs+mw==]
+eolsen_user:
+  groups:
+    - wheel
+  password: >
+      ENC[PKCS7,MIIB2gYJKoZIhvcNAQcDoIIByzCCAccCAQAxggEhMIIBHQIBADAFMAACAQEw
+      DQYJKoZIhvcNAQEBBQAEggEAlniU1+8SyJbHvnSF1KULWumUXQd8hwQG/waC
+      YeCONsWSt+mvkRgdunIUIQ3rakN3Io3quHrKLuko5TtLnLvRo8FZqh6pp8t7
+      WrudtJn6q6sqhXDyXz+bVgGAxWMf2dhPpX/b3KaldJVhRQgdnmhOCIPDoBiU
+      BvfwojS9lavDHG1igiX8+QMmMV+vIZcyWdf1SC5Bd3SoqR5XAgAWhcPk7L8/
+      soj83BsPlapenYQtrs7rx/2sM9/Japl9Px8aX+17gzDmpFYMw5JACN1jTBi7
+      ZbaBTHxFuumjgYTv6SV4fyD6E6XCop0UNU1SLBtxrU6b7fnczymQaU3epDK/
+      sErhBDCBnAYJKoZIhvcNAQcBMB0GCWCGSAFlAwQBKgQQocDymy0HgvMyA41R
+      PzxIiIBw5dhd3K+JOLvol36+3Lkg4itNzs4WSr1yVLVYvlvnNFjI5Wi1WTdV
+      fChhFE1dwOCpsi/o46il1Zrh6xw9QMl24pBUGjaQAvqXjn9sozagMGwpaEro
+      QJ1OyZczq6LQADB0hbyLLtOpkdz0/IxGDNs+mw==]
