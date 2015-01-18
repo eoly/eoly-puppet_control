@@ -6,3 +6,36 @@ classes:
 ntp_servers:
   - 0.pool.ntp.org
   - 1.pool.ntp.org
+
+elasticsearch_instances:
+    logstash_es:
+        ensure: 'present'
+        status: 'running'
+        init_defaults:
+            ES_HEAP_SIZE: '2g'
+            MAX_LOCKED_MEMORY: 'unlimited'
+            MAX_OPEN_FILES: '65535'
+            ES_JAVA_OPTS:
+                - '"-Djna.tmpdir=/usr/share/elasticsearch/tmp -Djava.io.tmpdir=/usr/share/elasticsearch/tmp"'
+        config:
+            node.name: "%{::hostname}"
+            node.master: true
+            node.data: true
+            bootstrap.mlockall: true
+            action.disable_delete_all_indices: true
+            gateway.recover_after_nodes: '1'
+            gateway.expected_nodes: '1'
+            cluster.name: 'logstash'
+            cluster.routing.allocation.cluster_concurrent_rebalance: '1'
+            indicies.fielddata.cache.size: '25%'
+            indicies.recovery.concurrent_streams: '2'
+            index.number_of_shards: '5'
+            index.number_of_replicas: '1'
+            discovery.zen.ping_timeouts: '3s'
+            discovery.zin.multicast.enabled: false
+            discovery.zen.ping.unicast.hosts:
+                - 'pugeye.hq.sourcecurrent.net'
+            discovery.zen.minimum_master_nodes: '2'
+            discovery.zen.fd.ping_interval: '1s'
+            discovery.zen.fd.ping_timeout: '30s'
+            discovery.zen.fd.ping_retries: '3'
