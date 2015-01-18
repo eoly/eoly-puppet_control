@@ -15,8 +15,7 @@ elasticsearch_instances:
             ES_HEAP_SIZE: '2g'
             MAX_LOCKED_MEMORY: 'unlimited'
             MAX_OPEN_FILES: '65535'
-            ES_JAVA_OPTS:
-                - '"-Djna.tmpdir=/usr/share/elasticsearch/tmp -Djava.io.tmpdir=/usr/share/elasticsearch/tmp"'
+            ES_JAVA_OPTS: '"-Djna.tmpdir=/usr/share/elasticsearch/tmp -Djava.io.tmpdir=/usr/share/elasticsearch/tmp"'
         config:
             node.name: "%{::hostname}"
             node.master: true
