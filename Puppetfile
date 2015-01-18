@@ -13,6 +13,7 @@ mod "alup/rbenv", "1.2.0"
 mod "maestrodev/wget", "1.5.6"
 mod "stahnma/epel", "1.0.0"
 mod "dwerder/graphite", "5.6.0"
+mod "ispavailability/file_concat", "0.1.0"
 
 mod 'postfix', 
     :git => 'https://github.com/thias/puppet-postfix',
