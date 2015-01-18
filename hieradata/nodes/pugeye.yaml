@@ -29,7 +29,7 @@ elasticsearch_instances:
             indicies.fielddata.cache.size: '25%'
             indicies.recovery.concurrent_streams: '2'
             index.number_of_shards: '5'
-            index.number_of_replicas: '1'
+            index.number_of_replicas: '0'
             discovery.zen.ping_timeouts: '3s'
             discovery.zin.multicast.enabled: false
             discovery.zen.ping.unicast.hosts:
