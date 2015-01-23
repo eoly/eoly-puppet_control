@@ -16,6 +16,7 @@ mod "dwerder/graphite", "5.6.0"
 mod "dwerder/redis", "1.2.3"
 mod "ispavailability/file_concat", "0.1.0"
 mod "nanliu/staging", "1.0.3"
+mod "thias/openvpn", "0.2.6"
 
 mod 'postfix', 
     :git => 'https://github.com/thias/puppet-postfix',
