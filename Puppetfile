@@ -9,7 +9,7 @@ mod "puppetlabs/vcsrepo", "1.2.0"
 
 mod "elasticsearch/elasticsearch", "0.4.0"
 mod "elasticsearch/logstash", "0.5.1"
-mod "alup/rbenv", "1.2.0"
+mod "jdowning/rbenv", "1.5.1"
 mod "maestrodev/wget", "1.5.6"
 mod "stahnma/epel", "1.0.0"
 mod "dwerder/graphite", "5.6.0"
