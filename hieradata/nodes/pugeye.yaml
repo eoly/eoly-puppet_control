@@ -1,7 +1,7 @@
 ---
 
 classes:
-  - roles::pugeye_box
+  - role::pugeye_box
 
 ntp_servers:
   - 0.pool.ntp.org

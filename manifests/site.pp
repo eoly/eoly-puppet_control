@@ -18,9 +18,11 @@
 
 # Define filebucket 'main':
 filebucket { 'main':
-  server => 'master',
+  server => "${::settings::server}",
   path   => false,
 }
+
+#File { backup => 'main' }
 
 # Kill deprecation warnings in PE 3.3:
 Package { allow_virtual => false }

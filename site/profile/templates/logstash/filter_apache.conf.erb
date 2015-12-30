@@ -1,0 +1,12 @@
+filter {
+    if [type] == "apache" or "apache" in [tags] {
+        grok {
+            match => [ "message", "%{COMBINEDAPACHELOG}" ]
+        }
+        date {
+            match => [ "timestamp", "dd/MMM/yyyy:HH:mm:ss Z" ]
+            locale => "en"
+            add_tag => [ 'date_parsed' ]
+        }
+    }
+}
