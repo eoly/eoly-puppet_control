@@ -19,9 +19,3 @@ mod 'rbenv',
 
 mod 'postfix', 
   :git => 'https://github.com/thias/puppet-postfix'
-
-mod 'roles',
-  :git => 'https://github.com/eoly/eoly-roles'
-
-mod 'profiles',
-  :git => 'https://github.com/eoly/eoly-profiles'
