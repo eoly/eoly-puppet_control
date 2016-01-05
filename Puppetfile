@@ -14,7 +14,7 @@ mod 'maestrodev/wget'
 mod 'stahnma/epel'
 mod 'ispavailability/file_concat', '0.1.0'
 mod 'nanliu/staging'
-mod 'ghoneycutt/puppet-module-vim'
+mod 'ghoneycutt/vim'
 
 mod 'rbenv',
   :git => 'https://github.com/justindowning/puppet-rbenv'
