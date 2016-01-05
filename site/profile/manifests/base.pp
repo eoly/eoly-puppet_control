@@ -1,6 +1,7 @@
 class profile::base {
 
-  include ::epel
+  include '::epel'
+  include '::vim'
 
   $ntp_servers = hiera('ntp_servers')
   $user_groups = hiera('user_groups')
@@ -11,8 +12,6 @@ class profile::base {
   class { 'ntp':
     servers => $::profile::base::ntp_servers,
   }
-
-  package { 'vim': ensure => present }
 
   create_resources(group,$::profile::base::user_groups)
 
