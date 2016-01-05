@@ -12,6 +12,8 @@ class profile::base {
     servers => $::profile::base::ntp_servers,
   }
 
+  package { 'vim': ensure => present }
+
   create_resources(group,$::profile::base::user_groups)
 
 }
