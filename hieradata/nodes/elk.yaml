@@ -6,3 +6,5 @@ classes:
 ntp_servers:
   - 0.pool.ntp.org
   - 1.pool.ntp.org
+
+profile::elk::dns_name: 'elk.vagrant'
