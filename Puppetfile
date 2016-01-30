@@ -29,5 +29,5 @@ mod 'rbenv',
 mod 'postfix', 
   :git => 'https://github.com/thias/puppet-postfix'
 
-mod 'logstash_configs'
+mod 'logstash_configs',
   :git => 'ssh://eolsen@lnode1.srv.sourcecurrent.net:/home/eolsen/repos/entertainment-logstash_configs.git'
