@@ -18,6 +18,7 @@ mod 'ghoneycutt/vim'
 mod 'elasticsearch/elasticsearch'
 mod 'jfryman/nginx'
 mod 'evenup/kibana'
+mod 'arioch/redis'
 
 mod 'rbenv',
   :git => 'https://github.com/justindowning/puppet-rbenv'
