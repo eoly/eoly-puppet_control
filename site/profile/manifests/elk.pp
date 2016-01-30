@@ -49,8 +49,7 @@ class profile::elk {
 
   nginx::resource::location { "${dns_name}_kibana":
     ensure   => present,
-    ssl      => true,
-    ssl_only => true,
+    ssl      => false,
     location => '/kibana/',
     vhost    => $dns_name,
     proxy    => 'http://nginx_kibana_members/',
