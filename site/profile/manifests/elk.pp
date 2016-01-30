@@ -4,7 +4,7 @@ class profile::elk {
   include '::profile::java'
 
   # Get cluster_dns_name
-  $dns_name = hiera("profiles::elk::dns_name")
+  $dns_name = hiera("profile::elk::dns_name")
 
   # Build array of nginx es members
   $nginx_es_members = [ 'localhost:9200' ]
