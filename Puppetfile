@@ -20,6 +20,7 @@ mod 'elasticsearch/logstash'
 mod 'jfryman/nginx'
 mod 'evenup/kibana'
 mod 'arioch/redis'
+mod 'yo61/logrotate'
 
 mod 'rbenv',
   :git => 'https://github.com/justindowning/puppet-rbenv'
