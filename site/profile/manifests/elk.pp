@@ -73,7 +73,7 @@ class profile::elk {
   $es_tmp_dir = '/usr/share/elasticsearch/tmp'
 
   # Calculate Elasticsearch Heap Size (uses half of system memory)
-  $es_heap_size_mb = inline_template('<%= (memorysize_mb.to_i/2).floor -%>')
+  $es_heap_size_mb = inline_template('<%= (@memorysize_mb.to_i/2).floor -%>')
 
   class { '::elasticsearch':
     ensure            => present,
@@ -134,7 +134,7 @@ class profile::elk {
   ## Logstash Config Section
 
   # Calculate Logstash Heap Size (uses 20% of system memory)
-  $ls_heap_size_mb = inline_template('<%= (memorysize_mb.to_i/5).floor -%>')
+  $ls_heap_size_mb = inline_template('<%= (@memorysize_mb.to_i/5).floor -%>')
 
   class { '::logstash':
     ensure            => present,
