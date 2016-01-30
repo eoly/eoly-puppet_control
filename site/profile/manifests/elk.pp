@@ -56,8 +56,14 @@ class profile::elk {
   }
 
   ## Kibana Config Section
+  file { '/var/run/kibana':
+    ensure  => directory,
+    owner   => 'kibana'
+  }
+
   class { '::kibana':
-    es_url => 'http://localhost:8080',
+    es_url   => 'http://localhost:8080',
+    pid_file => '/var/run/kibana/kibana.pid'
   }
 
   ## Redis Config Section
