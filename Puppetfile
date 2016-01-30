@@ -15,6 +15,9 @@ mod 'stahnma/epel'
 mod 'ispavailability/file_concat', '0.1.0'
 mod 'nanliu/staging'
 mod 'ghoneycutt/vim'
+mod 'elasticsearch/elasticsearch'
+mod 'jfryman/nginx'
+mod 'evenup/kibana'
 
 mod 'rbenv',
   :git => 'https://github.com/justindowning/puppet-rbenv'
