@@ -16,7 +16,7 @@ class profile::gitserver {
       user    => 'git',
       type    => 'ssh-rsa',
       key     => $value,
-      options => "command='git'"
+      options => 'command="git"'
     }
   }
 }
