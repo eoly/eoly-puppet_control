@@ -3,6 +3,8 @@ class profile::elk {
   # This stuff needs lots of Java
   include '::profile::java'
 
+  include '::logstash_configs'
+
   # Get cluster_dns_name
   $dns_name = hiera("profile::elk::dns_name")
 
