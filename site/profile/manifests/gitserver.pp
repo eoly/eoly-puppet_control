@@ -6,6 +6,7 @@ class profile::gitserver {
   user { 'git':
     ensure         => present,
     home           => '/home/git',
+    shell          => '/bin/git-shell',
     managehome     => true,
     password       => $password,
     purge_ssh_keys => true
@@ -16,7 +17,6 @@ class profile::gitserver {
       user    => 'git',
       type    => 'ssh-rsa',
       key     => $value,
-      options => 'command="git"'
     }
   }
 }
