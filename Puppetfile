@@ -30,4 +30,4 @@ mod 'postfix',
   :git => 'https://github.com/thias/puppet-postfix'
 
 mod 'logstash_configs',
-  :git => 'ssh://git@lnode1.srv.sourcecurrent.net:entertainment-logstash_configs.git'
+  :git => 'git@lnode1.srv.sourcecurrent.net:entertainment-logstash_configs.git'
