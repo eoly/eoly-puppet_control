@@ -172,4 +172,6 @@ class profile::elk {
 
   logstash_configs::input::redis { 'logstash_redis_input': }
 
+  logstash_configs::output::elasticsearch { 'elasticsearch_output': }
+
 }
