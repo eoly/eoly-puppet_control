@@ -168,4 +168,6 @@ class profile::elk {
     postrotate    => 'systemctl restart logstash'
   }
 
+  logstash_configs::input::redis { 'logstash_redis_input': }
+
 }
