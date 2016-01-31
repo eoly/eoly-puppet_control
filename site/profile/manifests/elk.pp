@@ -173,7 +173,7 @@ class profile::elk {
   logstash_configs::input::redis { 'logstash_redis_input': }
 
   logstash_configs::output::elasticsearch { 'es_yumlog_output': 
-    host         => [ 'localhost:9200' ],
+    host         => [ 'localhost' ],
     allowed_type => 'yumlog',
     index        => 'yumlog'
   }
