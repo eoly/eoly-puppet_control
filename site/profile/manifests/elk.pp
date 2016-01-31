@@ -174,6 +174,7 @@ class profile::elk {
 
   logstash_configs::output::elasticsearch { 'es_yumlog_output': 
     host         => [ 'localhost' ],
+    cluster      => 'elk',
     allowed_type => 'yumlog',
     index        => 'yumlog'
   }
