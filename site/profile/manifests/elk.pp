@@ -172,6 +172,9 @@ class profile::elk {
 
   logstash_configs::input::redis { 'logstash_redis_input': }
 
-  logstash_configs::output::elasticsearch { 'elasticsearch_output': }
+  logstash_configs::output::elasticsearch { 'es_yumlog_output': 
+    allowed_type => 'yumlog',
+    index        => 'yumlog'
+  }
 
 }
