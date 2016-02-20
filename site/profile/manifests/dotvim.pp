@@ -9,15 +9,15 @@ class profile::dotvim (
     source   => $repo
   }
 
-  file { "/home/${user}/dotvim":
+  file { "/home/${user}/.vim":
     ensure  => link,
-    target  => "/home/${user}/.vim",
+    target  => "/home/${user}/dotvim",
     require => Vcsrepo["/home/${user}/dotvim"]
   }
 
-  file { "/home/${user}/dotvim/.vimrc":
+  file { "/home/${user}/.vimrc":
     ensure  => link,
-    target  => "/home/${user}/.vimrc",
+    target  => "/home/${user}/dotvim/.vimrc",
     require => Vcsrepo["/home/${user}/dotvim"]
   }
 
