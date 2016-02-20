@@ -1,9 +1,14 @@
 class profile::google_chrome {
-  $rpm_url = 'https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm'
+  yumrepo { 'google-chorme':
+    ensure   => present,
+    baseurl  => 'http://dl.google.com/linux/chrome/rpm/stable/$basearch',
+    enabled  => true,
+    gpgkey   => 'https://dl-ssl.google.com/linux/linux_signing_key.pub',
+    gpgcheck => true
+  }
 
-  package { 'google-chrome-stable_current':
-    ensure   => installed,
-    provider => rpm,
-    source   => $rpm_url
+  package { 'google-chrome-stable':
+    ensure   => installed
+    require  => Yumrepo['google-chrome']
   }
 }
