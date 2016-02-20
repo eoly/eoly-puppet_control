@@ -11,7 +11,7 @@ class profile::dotvim (
 
   file { "/home/${user}/.vim":
     ensure  => link,
-    user    => $user,
+    owner   => $user,
     group   => $user,
     target  => "/home/${user}/dotvim",
     require => Vcsrepo["/home/${user}/dotvim"]
@@ -19,7 +19,7 @@ class profile::dotvim (
 
   file { "/home/${user}/.vimrc":
     ensure  => link,
-    user    => $user,
+    owner   => $user,
     group   => $user,
     target  => "/home/${user}/dotvim/vimrc",
     require => Vcsrepo["/home/${user}/dotvim"]
