@@ -8,7 +8,7 @@ class profile::google_chrome {
   }
 
   package { 'google-chrome-stable':
-    ensure   => installed
+    ensure   => installed,
     require  => Yumrepo['google-chrome']
   }
 }
