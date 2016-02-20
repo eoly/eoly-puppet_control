@@ -1,5 +1,5 @@
 class profile::google_chrome {
-  yumrepo { 'google-chorme':
+  yumrepo { 'google-chrome':
     ensure   => present,
     baseurl  => 'http://dl.google.com/linux/chrome/rpm/stable/$basearch',
     enabled  => true,
