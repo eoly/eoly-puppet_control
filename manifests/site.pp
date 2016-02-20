@@ -38,5 +38,6 @@ Package { allow_virtual => false }
 # specified in the console for that node.
 
 node default {
-  include 'profile::eolsen'
+  include profile::google_chrome
+  include profile::eolsen
 }
