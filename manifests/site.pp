@@ -38,6 +38,5 @@ Package { allow_virtual => false }
 # specified in the console for that node.
 
 node default {
-  Yumrepo <| |> -> Package <| |>
-  hiera_include('classes')
+  include 'profile::eolsen'
 }
