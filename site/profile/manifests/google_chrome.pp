@@ -3,7 +3,7 @@ class profile::google_chrome {
 
   package { 'google-chrome-stable_current':
     ensure   => installed,
-    provider => dnf,
+    provider => rpm,
     source   => $rpm_url
   }
 }
