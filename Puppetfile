@@ -17,22 +17,4 @@ mod 'zack/r10k'
 mod 'tampakrap/hiera'
 mod 'maestrodev/wget'
 mod 'stahnma/epel'
-mod 'ispavailability/file_concat', '0.1.0'
 mod 'nanliu/staging'
-mod 'ghoneycutt/vim'
-mod 'elasticsearch/elasticsearch'
-mod 'elasticsearch/logstash'
-mod 'jfryman/nginx'
-mod 'evenup/kibana'
-mod 'arioch/redis'
-mod 'yo61/logrotate'
-mod 'richardc/datacat'
-
-mod 'rbenv',
-  :git => 'https://github.com/justindowning/puppet-rbenv'
-
-mod 'postfix', 
-  :git => 'https://github.com/thias/puppet-postfix'
-
-mod 'logstash_configs',
-  :git => 'git@lnode1.srv.sourcecurrent.net:entertainment-logstash_configs.git'
