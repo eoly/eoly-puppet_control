@@ -40,5 +40,6 @@ Package { allow_virtual => false }
 node default {
   include profile::google_chrome
   include profile::virtualbox
+  include profile::packer
   include profile::eolsen
 }
