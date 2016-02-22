@@ -6,7 +6,9 @@ class profile::dotfiles (
   vcsrepo { "/home/${user}/dotfiles":
     ensure   => latest,
     provider => git,
-    source   => $repo
+    source   => $repo,
+    revision => 'master',
+    user     => $user
   }
 
   file { "/home/${user}/.vimrc.after":
