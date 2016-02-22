@@ -4,7 +4,7 @@ class profile::dotfiles (
 ){
 
   vcsrepo { "/home/${user}/dotfiles":
-    ensure   => present,
+    ensure   => latest,
     provider => git,
     source   => $repo
   }
