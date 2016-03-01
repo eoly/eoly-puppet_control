@@ -21,8 +21,7 @@ class profile::eyaml (
       ensure  => directory,
       owner   => $user,
       group   => $group,
-      mode    => '0755',
-      require => User[$user]
+      mode    => '0755'
     }
 
     file { "${app_tier_config_dir}/config.yaml":
