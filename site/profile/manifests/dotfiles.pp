@@ -11,20 +11,21 @@ class profile::dotfiles (
     user     => $user
   }
 
-  file { "/home/${user}/.vimrc.after":
-    ensure  => link,
-    owner   => $user,
-    group   => $user,
-    target  => "/home/${user}/dotfiles/vimrc.after",
-    require => Vcsrepo["/home/${user}/dotfiles"]
+  file {
+    default:
+      ensure  => link,
+      owner   => $user,
+      group   => $user,
+      require => Vcsrepo["/home/${user}/dotfiles"],
+    ;
+    ["/home/${user}/.vimrc.after"]:
+      target => "/home/${user}/dotfiles/vimrc.after"
+    ;
+    ["/home/${user}/.vimrc.bundles"]:
+      target => "/home/${user}/dotfiles/vimrc.bundles"
+    ;
+    ["/home/${user}/.puppet-lint.rc"]:
+      target => "/home/${user}/dotfiles/puppet-lint.rc"
+    ;
   }
-
-  file { "/home/${user}/.vimrc.bundles":
-    ensure  => link,
-    owner   => $user,
-    group   => $user,
-    target  => "/home/${user}/dotfiles/vimrc.bundles",
-    require => Vcsrepo["/home/${user}/dotfiles"]
-  }
-
 }
