@@ -18,10 +18,11 @@ class profile::eyaml (
     $app_tier_config_dir = "${eyaml_config_dir}/${app_tier}"
 
     file { $app_tier_config_dir:
-      ensure => directory,
-      owner  => $user,
-      group  => $group,
-      mode   => '0755'
+      ensure  => directory,
+      owner   => $user,
+      group   => $group,
+      mode    => '0755',
+      require => User[$user]
     }
 
     file { "${app_tier_config_dir}/config.yaml":
