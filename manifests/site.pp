@@ -42,5 +42,4 @@ node default {
   include profile::virtualbox
   include profile::packer
   include profile::eolsen
-  include profile::eyaml
 }
