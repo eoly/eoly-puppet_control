@@ -16,4 +16,8 @@ class profile::eolsen {
     user => $user
   }
 
+  class { 'profile::puppet_lint':
+    user => $user
+  }
+
 }
