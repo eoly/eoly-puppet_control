@@ -14,6 +14,13 @@ class profile::eyaml (
   pkcs7_public_key: '<%=$config_dir%>/public_key.pkcs7.pem'
   END
 
+  file { $eyaml_config_dir:
+    ensure  => directory,
+    owner   => $user,
+    group   => $group,
+    mode    => '0755'
+  }
+
   $app_tiers.each |$app_tier| {
     $app_tier_config_dir = "${eyaml_config_dir}/${app_tier}"
 
@@ -21,7 +28,8 @@ class profile::eyaml (
       ensure  => directory,
       owner   => $user,
       group   => $group,
-      mode    => '0755'
+      mode    => '0755',
+      require => File[$eyaml_config_dir]
     }
 
     file { "${app_tier_config_dir}/config.yaml":
