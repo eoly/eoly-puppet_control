@@ -7,12 +7,12 @@ class profile::eyaml (
   $eyaml_config_dir = "/home/${user}/.eyaml"
 
   $config_file_tpl = @(END)
-  <%- | String $config_dir,
-  | -%>
-  ---
-  pkcs7_private_key: '<%=$config_dir%>/private_key.pkcs7.pem'
-  pkcs7_public_key: '<%=$config_dir%>/public_key.pkcs7.pem'
-  END
+<%- | String $config_dir,
+| -%>
+---
+pkcs7_private_key: '<%=$config_dir%>/private_key.pkcs7.pem'
+pkcs7_public_key: '<%=$config_dir%>/public_key.pkcs7.pem'
+END
 
   file { $eyaml_config_dir:
     ensure  => directory,
