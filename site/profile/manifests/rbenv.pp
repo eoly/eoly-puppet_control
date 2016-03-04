@@ -9,4 +9,8 @@ class profile::rbenv(
   }
 
   rbenv::plugin { 'sstephenson/ruby-build': }
+
+  rbenv::build { '2.0.0-p648': }
+  rbenv::build { '1.9.3-p551': }
+
 }
