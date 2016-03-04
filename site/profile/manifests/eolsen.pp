@@ -18,6 +18,8 @@ class profile::eolsen {
 
   class { 'profile::puppet_lint': }
 
-  class { 'profile::rbenv': }
+  class { 'profile::rbenv':
+    user => $user
+  }
 
 }

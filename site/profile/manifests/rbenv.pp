@@ -1,6 +1,11 @@
-class profile::rbenv {
+class profile::rbenv(
+  $user,
+) {
   class { 'rbenv':
-    latest => true,
+    install_dir => "/home/${user}/rbenv",
+    owner       => $user,
+    group       => $user,
+    latest      => true,
   }
 
   rbenv::plugin { 'sstephenson/ruby-build': }
