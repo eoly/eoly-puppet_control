@@ -4,7 +4,7 @@ class profile::dotvim (
 ) {
 
   vcsrepo { "/home/${user}/dotvim":
-    ensure   => present,
+    ensure   => latest,
     provider => git,
     source   => $repo
   }
