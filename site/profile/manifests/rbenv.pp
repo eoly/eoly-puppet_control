@@ -12,5 +12,6 @@ class profile::rbenv(
 
   rbenv::build { '2.0.0-p648': }
   rbenv::build { '1.9.3-p551': }
+  rbenv::build { '2.1.8': }
 
 }
