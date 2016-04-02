@@ -8,3 +8,6 @@ sudo dnf install puppet-agent
 
 # install r10k module
 sudo /opt/puppetlabs/bin/puppet module install zack-r10k
+
+# install rubygems rpm
+sudo dnf install rubygems
