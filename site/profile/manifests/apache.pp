@@ -12,6 +12,7 @@ class profile::apache {
     mpm_module             => false,
     trace_enable           => 'Off',
     vhost_dir              => '/etc/httpd/vhosts.d',
+    purge_vhost_dir        => false,
   }
   
   class { '::apache::mod::prefork':
