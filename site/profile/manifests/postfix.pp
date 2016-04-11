@@ -8,7 +8,7 @@ class profile::postfix {
   $mynetworks                 = hiera('postfix_mynetworks')
   $virtual_mailbox_domains    = hiera('postfix_virtual_mailbox_domains')
   $virtual_mailbox_maps       = hiera('postfix_virtual_mailbox_maps')
-  $postfix_virtual_mailboxes  = hiera('postfix_virtual_aliases')
+  $postfix_virtual_mailboxes  = hiera('postfix_virtual_mailboxes')
   $virtual_alias_domains      = hiera('postfix_virtual_alias_domains')
   $virtual_alias_maps         = hiera('postfix_virtual_alias_maps')
   $postfix_virtual_aliases    = hiera('postfix_virtual_aliases')
