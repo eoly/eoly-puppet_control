@@ -23,6 +23,7 @@ class profile::postfix {
     virtual_mailbox_domains => $virtual_mailbox_domains,
     virtual_mailbox_maps    => $virtual_mailbox_maps,
     virtual_mailbox_base    => '/var/spool/mail/vhosts',
+    virtual_transport       => 'lmtp:unix:private/dovecot-lmtp',
     virtual_uid_maps        => 'static:5000',
     virtual_gid_maps        => 'static:5000',
     virtual_alias_domains   => $virtual_alias_domains,
