@@ -22,7 +22,7 @@ class profile::postfix {
     mynetworks              => $mynetworks,
     virtual_mailbox_domains => $virtual_mailbox_domains,
     virtual_mailbox_maps    => $virtual_mailbox_maps,
-    virtual_mailbox_base    => '/var/spool/mail',
+    virtual_mailbox_base    => '/var/spool/mail/vhosts',
     virtual_uid_maps        => 'static:5000',
     virtual_gid_maps        => 'static:5000',
     virtual_alias_domains   => $virtual_alias_domains,
