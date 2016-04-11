@@ -29,6 +29,13 @@ class profile::postfix {
     virtual_alias_maps      => $virtual_alias_maps,
   }
 
+  file { '/var/spool/mail/vhosts':
+    ensure => directory,
+    owner  => 'postfix',
+    group  => 'postfix',
+    mode   => '0755',
+  }
+
   postfix::dbfile { 'virtual':
     content => template('profile/postfix_virtual_aliases.erb'),
   }
