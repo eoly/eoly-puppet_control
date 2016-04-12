@@ -14,20 +14,24 @@ class profile::postfix {
   $postfix_virtual_aliases    = hiera('postfix_virtual_aliases')
 
   class { '::postfix::server':
-    myhostname              => $myhostname,
-    mydomain                => $mydomain,
-    mydestination           => $mydestination,
-    inet_interfaces         => $inet_interfaces,
-    mail_name               => $mail_name,
-    mynetworks              => $mynetworks,
-    virtual_mailbox_domains => $virtual_mailbox_domains,
-    virtual_mailbox_maps    => $virtual_mailbox_maps,
-    virtual_mailbox_base    => '/var/spool/mail/vhosts',
-    virtual_transport       => 'lmtp:unix:private/dovecot-lmtp',
-    virtual_uid_maps        => 'static:5000',
-    virtual_gid_maps        => 'static:5000',
-    virtual_alias_domains   => $virtual_alias_domains,
-    virtual_alias_maps      => $virtual_alias_maps,
+    myhostname                  => $myhostname,
+    mydomain                    => $mydomain,
+    mydestination               => $mydestination,
+    inet_interfaces             => $inet_interfaces,
+    mail_name                   => $mail_name,
+    mynetworks                  => $mynetworks,
+    virtual_mailbox_domains     => $virtual_mailbox_domains,
+    virtual_mailbox_maps        => $virtual_mailbox_maps,
+    virtual_mailbox_base        => '/var/spool/mail/vhosts',
+    virtual_transport           => 'lmtp:unix:private/dovecot-lmtp',
+    virtual_uid_maps            => 'static:5000',
+    virtual_gid_maps            => 'static:5000',
+    virtual_alias_domains       => $virtual_alias_domains,
+    virtual_alias_maps          => $virtual_alias_maps,
+    smtpd_sasl_type             => 'dovecot',
+    smtpd_sasl_path             => 'private/auth',
+    smtpd_sasl_auth_enable      => 'yes',
+    smtpd_sasl_security_options => 'noanonymous',
   }
 
   file { '/var/spool/mail/vhosts':
