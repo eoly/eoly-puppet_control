@@ -1,5 +1,5 @@
 class profile::packer {
-  $version = '0.8.6'
+  $version = '0.10.0'
 
   class { 'packer':
     version  => $version,
