@@ -11,3 +11,6 @@ sudo /opt/puppetlabs/bin/puppet module install zack-r10k
 
 # install rubygems rpm
 sudo dnf install rubygems
+
+# update sudoers secure path
+sudo sed -i '/^Defaults    secure_path/ s;$;:/opt/puppetlabs/bin;' /etc/sudoers
