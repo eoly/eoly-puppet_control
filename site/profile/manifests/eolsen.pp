@@ -26,4 +26,6 @@ class profile::eolsen {
     user => $user
   }
 
+  class { 'profile::hipchat': }
+
 }
