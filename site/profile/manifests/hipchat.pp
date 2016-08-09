@@ -6,7 +6,7 @@ class profile::hipchat {
     gpgcheck => false,
   }
 
-  package { 'HipChat':
+  package { 'hipchat4':
     ensure  => installed,
     require => Yumrepo['hipchat'],
   }
