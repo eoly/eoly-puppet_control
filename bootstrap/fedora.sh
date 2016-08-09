@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install puppetlabs repo
-sudo rpm -ivh https://yum.puppetlabs.com/puppetlabs-release-pc1-fedora-22.noarch.rpm
+sudo rpm -ivh https://yum.puppetlabs.com/puppetlabs-release-pc1-fedora-24.noarch.rpm
 
 # install puppet-agent
 sudo dnf install puppet-agent
