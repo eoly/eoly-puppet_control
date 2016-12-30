@@ -8,7 +8,7 @@ class profile::rbenv(
     latest      => true,
   }
 
-  rbenv::plugin { 'sstephenson/ruby-build': }
+  rbenv::plugin { 'rbenv/ruby-build': latest => true }
 
   rbenv::build { '2.0.0-p648': }
   rbenv::build { '1.9.3-p551': }
