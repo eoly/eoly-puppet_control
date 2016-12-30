@@ -22,10 +22,6 @@ class profile::eolsen {
     user => $user
   }
 
-  class { 'profile::docker':
-    user => $user
-  }
-
   class { 'profile::hipchat': }
 
 }
